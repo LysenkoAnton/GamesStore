@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2" />
+   
     <PackageReference Include="Microsoft.NetCore.App" Version="2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IIS" Version="2.2.2" />
     
