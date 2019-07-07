@@ -24,7 +24,7 @@ namespace GameStore
         public void ConfigureServices(IServiceCollection services) {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration["Data:GameStore:ConnectionString"]));
+                    Configuration["Data:GamesStore:ConnectionString"]));
 
             services.AddDbContext<AppIdentityDbContext>(options =>
                 options.UseSqlServer(
