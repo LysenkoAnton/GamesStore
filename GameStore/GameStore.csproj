@@ -18,6 +18,11 @@
     <PackageReference Include="Microsoft.NetCore.App" Version="2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IIS" Version="2.2.2" />
     
+    <PackageReference Include="BuildBundlerMinifier" Version="2.9.406" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    
  
    
 
