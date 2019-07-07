@@ -24,11 +24,11 @@ namespace GameStore
         public void ConfigureServices(IServiceCollection services) {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration["Data:SportStoreProducts:ConnectionString"]));
+                    Configuration["Data:GameStore:ConnectionString"]));
 
             services.AddDbContext<AppIdentityDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration["Data:SportStoreIdentity:ConnectionString"]));
+                    Configuration["Data:StoreIdentity:ConnectionString"]));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDbContext>()
@@ -44,8 +44,13 @@ namespace GameStore
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env) {
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())            {                var contextId = serviceScope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();                contextId.Database.Migrate();
-                var contextApp = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();                contextApp.Database.Migrate();            }
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var contextId = serviceScope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+                contextId.Database.Migrate();
+                var contextApp = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                contextApp.Database.Migrate();
+            }
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
                 app.UseStatusCodePages();
