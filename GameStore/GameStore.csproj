@@ -6,20 +6,12 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>GameStore</RootNamespace>
     <Version>2.2.0</Version>
-    
-    
-  </PropertyGroup>
+    </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
-   
-  <PackageReference Include="Microsoft.AspNetCore.App" />  
-    
+    <PackageReference Include="Microsoft.AspNetCore.App" />  
     <PackageReference Include="Microsoft.AspNetCore.Server.IIS" Version="2.2.2" />
-    
     </ItemGroup>
 
 </Project>
