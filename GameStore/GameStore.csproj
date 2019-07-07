@@ -18,7 +18,7 @@
   
     <PackageReference Include="Microsoft.NetCore.App" Version="2.2.0" />
    
-    <PackageReference Include="Microsoft.AspNetCore.App"/>
+    
     <PackageReference Include="Microsoft.AspNetCore.Server.IIS" Version="2.2.2" />
     
    
