@@ -13,7 +13,7 @@ GO
 use GameStore
 GO
 IF NOT EXISTS(SELECT * FROM Products)
-INSERT INTO Games (Name, Description, Category, Price)
+INSERT INTO Products (Name, Description, Category, Price)
 VALUES
 ('SimCity', 'Urban simulator again with you! Create the city of your dreams', 'Simulator', 1499.00),
 ('TITANFALL', 'This game will take you to the universe, where the small is opposed to the big, nature is the industry, and man is the machine', 'Shooter', 2299.00),
