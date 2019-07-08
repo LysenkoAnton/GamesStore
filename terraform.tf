@@ -8,14 +8,6 @@ terraform {
 	}
 }
 
-resource "random_id" "server" {
-  keepers = {
-    azi_id = 1
-  }
-
-  byte_length = 8
-}
-
 resource "azurerm_resource_group" "dev" {
   name     = "aelementterraform"
   location = "West Us"
