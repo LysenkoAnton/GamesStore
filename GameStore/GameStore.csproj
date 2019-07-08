@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2" />  
+    <PackageReference Include="Microsoft.AspNetCore.App" />  
     <PackageReference Include="Microsoft.AspNetCore.Server.IIS" Version="2.2.2" />
     </ItemGroup>
 
