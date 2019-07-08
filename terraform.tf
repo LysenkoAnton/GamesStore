@@ -40,7 +40,7 @@ resource "azurerm_app_service" "dev" {
 }
 
 resource "azurerm_app_service_slot" "dev" {
-  name                = "${random_id.server.hex}"
+  name                = "Stage"
   app_service_name    = "${azurerm_app_service.dev.name}"
   location            = "${azurerm_resource_group.dev.location}"
   resource_group_name = "${azurerm_resource_group.dev.name}"
