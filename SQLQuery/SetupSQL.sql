@@ -1,20 +1,18 @@
 use GameStore
 GO
-IF NOT EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME='Games' AND xtype='U')
-CREATE TABLE Games
+IF NOT EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME='Products' AND xtype='U')
+CREATE TABLE Products
 (
 	[GameID] INT NOT NULL PRIMARY KEY IDENTITY,
 	[Name] NVARCHAR(100) NOT NULL,
 	[Description] NVARCHAR(500) NOT NULL,
 	[Category] NVARCHAR(50) NOT NULL,
-	[Price] DECIMAL(16, 2) NOT NULL,
-        [ImageData] VARBINARY(MAX) NULL,
-	[ImageMimeType]	VARCHAR(50) NULL
+	[Price] DECIMAL(16, 2) NOT NULL
 )
 GO
-use GameStore
+use Products
 GO
-IF NOT EXISTS(SELECT * FROM Games)
+IF NOT EXISTS(SELECT * FROM Products)
 INSERT INTO Games (Name, Description, Category, Price)
 VALUES
 ('SimCity', 'Urban simulator again with you! Create the city of your dreams', 'Simulator', 1499.00),
