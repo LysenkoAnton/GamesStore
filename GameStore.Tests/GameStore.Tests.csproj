@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Version>2.2.0</Version>
     <IsPackable>false</IsPackable>
