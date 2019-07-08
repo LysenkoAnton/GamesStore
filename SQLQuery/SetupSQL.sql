@@ -10,7 +10,7 @@ CREATE TABLE Products
 	[Price] DECIMAL(16, 2) NOT NULL
 )
 GO
-use Products
+use GameStore
 GO
 IF NOT EXISTS(SELECT * FROM Products)
 INSERT INTO Games (Name, Description, Category, Price)
