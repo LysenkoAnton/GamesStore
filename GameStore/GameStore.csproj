@@ -6,7 +6,7 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>GameStore</RootNamespace>
     <Version>2.2.0</Version>
-    </PropertyGroup>
+    </PropertyGroup> 
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
