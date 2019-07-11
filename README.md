@@ -1,2 +1,2 @@
 # GameStore
-# Change for start CI/CD pipeline
+# Change for start CI/CD pipelines
