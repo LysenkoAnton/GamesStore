@@ -104,7 +104,9 @@
       "name": "[variables('publicIPAddressName')]",
       "location": "[parameters('location')]",
       "properties": {
-        "publicIPAllocationMethod": "Dynamic",
+        "ipAddress": "40.83.180.125",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
         "dnsSettings": {
           "domainNameLabel": "[concat(toLower(parameters('vmName')), uniquestring(resourceGroup().id))]"
         }
