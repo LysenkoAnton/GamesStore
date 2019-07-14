@@ -145,7 +145,7 @@
           {
             "name": "ipconfig1",
             "properties": {
-              "publicIPAllocationMethod": "Dynamic",
+              "privateIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
                 "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"
               },
