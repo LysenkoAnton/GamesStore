@@ -104,8 +104,7 @@
       "name": "[variables('publicIPAddressName')]",
       "location": "[parameters('location')]",
       "properties": {
-        "ipAddress": "40.83.180.125",
-        "publicIPAllocationMethod": "Static",
+        "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
           "domainNameLabel": "[concat(toLower(parameters('vmName')), uniquestring(resourceGroup().id))]"
         }
@@ -145,9 +144,8 @@
         "ipConfigurations": [
           {
             "name": "ipconfig1",
-            "properties": {
-              "ipAddress": "40.83.180.125",
-              "publicIPAllocationMethod": "Static",
+            "properties":
+              "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
                 "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"
               },
