@@ -15,5 +15,5 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS runtime
 WORKDIR /app
 EXPOSE 80
-COPY --from=build /app/GamesStore/out ./
-ENTRYPOINT ["dotnet", "GamesStore.dll"]
+COPY --from=build /app/GameStore/out ./
+ENTRYPOINT ["dotnet", "GameStore.dll"]
