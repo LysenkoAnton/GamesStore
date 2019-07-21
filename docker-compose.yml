@@ -1,8 +1,8 @@
 version: '2'
 
 services:
-  GamesStore.Web:
-    image: GamesStore.Web
+  GamesStoreWeb:
+    image: GamesStoreWeb
     build:
       context: ./GameStore
       dockerfile: Dockerfile
