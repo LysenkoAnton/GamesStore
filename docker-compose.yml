@@ -2,7 +2,7 @@ version: '2'
 
 services:
   GamesStoreWeb:
-    image: GamesStoreWeb
+    image: mcr.microsoft.com/dotnet/core/aspnet:2.2
     build:
       context: ./GameStore
       dockerfile: Dockerfile
