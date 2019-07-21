@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ci-build:
+    image: microsoft/aspnetcore-build:1.0-2.0
+    volumes:
+      - .:/GameStore
+    working_dir: /GameStore
+    command: /bin/bash -c "dotnet restore ./GameStore.sln && dotnet publish ./GameStore.sln -c Release -o ./obj/Docker/publish"
