@@ -90,7 +90,7 @@ spec:
 
       - name: mhc-front
 
-        image: __ACR__/lysenkoantongamesstore_gamesstore.web:latest
+        image: GamesStoreK8sAcr.azurecr.io/lysenkoantongamesstore_gamesstore.web:latest
 
         imagePullPolicy: Always
 
